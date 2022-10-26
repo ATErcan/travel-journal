@@ -1,0 +1,30 @@
+footer {
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0.5rem;
+}
+footer a {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+footer a:hover {
+  animation: click 0.5s linear 1;
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
