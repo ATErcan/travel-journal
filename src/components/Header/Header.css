@@ -22,3 +22,10 @@ header .header-title .globe-icon {
     justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  header {
+    padding: 1.5rem 5rem;
+    justify-content: space-between;
+  }
+}
