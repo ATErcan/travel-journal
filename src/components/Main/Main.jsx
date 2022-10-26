@@ -1,5 +1,8 @@
+import CardContainer from "./CardContainer";
+import "./Main.css";
+
 const Main = () => {
-  return;
+  return <CardContainer />;
 };
 
 export default Main;
