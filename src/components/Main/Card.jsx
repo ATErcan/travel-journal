@@ -1,14 +1,13 @@
-import { CiLocationOn } from "react-icons/ci";
+import { GoLocation } from "react-icons/go";
 
 const Card = (props) => {
-  console.log(props.place);
   return (
     <div className="card">
       <img src={props.place.imageUrl} alt={props.place.title} />
       <div className="place">
         <div className="location">
           <div className="icon-country">
-            <CiLocationOn className="icon" />
+            <GoLocation className="icon" />
             <h5 className="country">{props.place.location.toUpperCase()}</h5>
           </div>
           <a href={props.place.googleMapsUrl} className="maps-link">
