@@ -7,18 +7,20 @@ const Card = (props) => {
       <img src={props.place.imageUrl} alt={props.place.title} />
       <div className="place">
         <div className="location">
-          <CiLocationOn />
-          <h5 className="country">{props.place.location}</h5>
+          <div className="icon-country">
+            <CiLocationOn className="icon" />
+            <h5 className="country">{props.place.location.toUpperCase()}</h5>
+          </div>
           <a href={props.place.googleMapsUrl} className="maps-link">
             View on Google Maps
           </a>
         </div>
-        <h3>{props.place.title}</h3>
+        <h3 className="place-name">{props.place.title}</h3>
         <div className="dates">
-          <span>{props.place.startDate}</span> -
-          <span>{props.place.endDate}</span>
+          <span className="dates-span">{props.place.startDate}</span> -
+          <span className="dates-span">{props.place.endDate}</span>
         </div>
-        <p>{props.place.description}</p>
+        <p className="desc">{props.place.description}</p>
       </div>
     </div>
   );
