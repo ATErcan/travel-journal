@@ -17,6 +17,7 @@
 .card .place .location .icon-country {
   display: flex;
   align-items: center;
+  column-gap: 0.5rem;
 }
 .card .place .location .icon-country .icon {
   width: 1.2rem;
